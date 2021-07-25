@@ -79,6 +79,18 @@ class Block:
 
 		return 1
 
+	@staticmethod
+	def is_valid_block(last_block, block):
+		"""
+		Validate block by enforcing the following rules:
+		 - the block must have the proper last_hash reference
+		 - the block must meet the proof of work requirement
+		 - the difficulty must only adjust by 1
+		 - the block hash must be a valid combination of the block fields
+		"""
+
+		if block.last_hash != last_block.hash:
+			raise Exception('The block last_hash must be correct')
 
 def main():
 	genesis_block = Block.genesis()
