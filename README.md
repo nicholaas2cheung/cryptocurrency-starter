@@ -23,3 +23,11 @@ python3 -m pytest server/test
 ```
 python3 -m server.app
 ```
+
+**Run a Peer Instance**
+
+Make sure to activate the virtual environment.
+
+```
+export PEER=True && python3 -m server.app
+```
