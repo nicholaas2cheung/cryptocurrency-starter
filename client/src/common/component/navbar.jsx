@@ -6,7 +6,7 @@ const NavBar = () => {
     <Container maxW="container.xl" py={8}>
       <Flex alignItems="center" justifyContent="space-between">
         <Box>
-          <Heading as="h1">👼 StarterCoin</Heading>
+          <Heading as="h1">🌖 PyChainCoin</Heading>
         </Box>
         <Box display="flex">
           <Center pl={4}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Flex, Heading, Text, Box, Image, Center } from '@chakra-ui/react';
+import { Container, Flex, Heading, Text, Box, Image } from '@chakra-ui/react';
 
 const HeroSection = () => {
   return (
@@ -7,7 +7,7 @@ const HeroSection = () => {
       <Flex alignItems="center" justifyContent="space-between">
         <Box maxW="55%">
           <Heading as="h1" fontSize="5xl" mb={2}>
-            👋 Welcome to StarterCoin!
+            👋 Welcome to PyChainCoin!
           </Heading>
           <Text as="mark" fontSize="2xl" fontFamily="rubik" fontWeight="600">
             A Starter Project to Learn More About Cryptocurrency 🏦
@@ -18,7 +18,6 @@ const HeroSection = () => {
             respoitory for more information on the project!
           </Text>
         </Box>
-        <Image src="./piggy-bank.svg" />
       </Flex>
     </Container>
   );
