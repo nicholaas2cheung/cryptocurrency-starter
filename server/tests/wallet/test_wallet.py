@@ -3,7 +3,6 @@ from server.wallet.transaction import Transaction
 from server.blockchain.blockchain import Blockchain
 from server.config import STARTING_BALANCE
 
-
 def test_verify_valid_signature():
     data = {'foo': 'test_data'}
     wallet = Wallet()

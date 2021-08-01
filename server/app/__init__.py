@@ -26,7 +26,13 @@ def route_blockchain():
 
 @app.route('/blockchain/mine')
 def route_blockchain_mine():
-    blockchain.add_block(transaction_pool.transaction_data())
+    transaction_data = transaction_pool.transaction_data()
+    
+    #assume the miner is the first one to mine the block in the network
+    #if the block is mined successfully, the transaction becomes official
+    transaction_data.append(Transaction.reward_transaction(wallet).to_json())
+
+    blockchain.add_block(transaction_data)
 
     #the newly added block should be the last block inside the blockchain
     block = blockchain.chain[-1]
