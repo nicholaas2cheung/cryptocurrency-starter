@@ -31,3 +31,9 @@ Make sure to activate the virtual environment.
 ```
 export PEER=True && python3 -m server.app
 ```
+
+**Seed the server with data**
+Make sure to activate the virtual environment.
+```
+export SEED_DATA=True && python3 -m server.app
+```

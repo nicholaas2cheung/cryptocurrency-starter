@@ -8,7 +8,7 @@ const NavBar = () => {
         <Box>
           <Heading as="h1">🌖 PyChainCoin</Heading>
         </Box>
-        <Box display="flex">
+        {/* <Box display="flex">
           <Center pl={4}>
             <Link size="8xl">Blockchain</Link>
           </Center>
@@ -18,7 +18,7 @@ const NavBar = () => {
           <Center pl={4}>
             <Link size="4xl">Transaction Pool</Link>
           </Center>
-        </Box>
+        </Box> */}
       </Flex>
     </Container>
   );
