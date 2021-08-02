@@ -9,6 +9,3 @@ STARTING_BALANCE = 1000
 
 MINING_REWARD = 50
 MINING_REWARD_INPUT = { 'address': '*--official-mining-reward--*' }
-
-print(MINING_REWARD)
-print(MINING_REWARD_INPUT)
