@@ -1,5 +1,5 @@
 # 🌖 PyChainCoin: A Cryptocurrency Starter Project
----
+
 👋 Hi All! I am Nicholas Cheung. Here is a project in which I have implemented the basics of blockchain and cryptocurrency with Python. Feel free to follow the instructions below to set up the local development demo and see how it works.
 
 ## 👨🏻‍💻 Setting Up Environment
@@ -12,15 +12,14 @@ $ git clone https://github.com/nicholaas2cheung/cryptocurrency-starter.git
 $ source blockchain-env/bin/activate
 ```
 
-2.1 For Windows user, please create the virtual environment on your own and activate it (Please make sure you have pip installed)
+3. For Windows user, please create the virtual environment on your own and activate it (Please make sure you have pip installed)
 ```
 $ py -m pip install --user virtualenv
 $ py -m venv env
 $ .\env\Scripts\activate
 ```
 
-3. Install all the required packages in the virtual environment
-**Install all packages**
+4. Install all the required packages in the virtual environment
 ```
 (venv) $ pip3 install -r requirements.txt
 ```
@@ -31,29 +30,28 @@ $ .\env\Scripts\activate
 $ source blockchain-env/bin/activate
 ```
 
-1.1 For Windows user, please create the virtual environment on your own and activate it (Please make sure you have pip installed)
+2. For Windows user, please create the virtual environment on your own and activate it (Please make sure you have pip installed)
 ```
 $ py -m pip install --user virtualenv
 $ py -m venv env
 $ .\env\Scripts\activate
 ```
-2. Start the backend server
+3. Start the backend server
 ```
 (venv) $ python3 -m server.app
 ```
 
-2.1 You can also start a backend server with dummy data
+4. You can also start a backend server with dummy data
 ```
 (venv) $ export SEED_DATA=True && python3 -m server.app
 ```
 
-3. Start a peer instance to simulate production environment in which different nodes interacting with each oterh with the blockchain.
-
+5. Start a peer instance to simulate production environment in which different nodes interacting with each other with the blockchain.
 ```
 (venv) $ export PEER=True && python3 -m server.app
 ```
 
-4. Start the frontend development server
+6. Start the frontend development server
 ```
 $ /client npm install
 $ /client npm run start
@@ -66,14 +64,14 @@ $ /client npm run start
 $ source blockchain-env/bin/activate
 ```
 
-1.1 For Windows user, please create the virtual environment on your own and activate it (Please make sure you have pip installed)
+2. For Windows user, please create the virtual environment on your own and activate it (Please make sure you have pip installed)
 ```
 $ py -m pip install --user virtualenv
 $ py -m venv env
 $ .\env\Scripts\activate
 ```
 
-2. Run tests with Pytest packages
+3. Run tests with Pytest packages
 ```
 (venv) $ python3 -m pytest server/tests
 ```
